@@ -1,0 +1,113 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 66px;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+.logo img{
+    width: 87px;
+    margin-bottom: -13px;
+}
+
+.navbar a {
+    font-size: 21px;
+    color: var(--purple-color);
+    text-decoration: none;
+    font-weight: 500;
+    text-align: right;
+    margin-left: 2.5rem;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: var(--purple-color);
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .icons {
+        display: block;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #fff;
+        backdrop-filter: blur(50px);
+        transition: 0.3s ease;
+        overflow: hidden;
+    }
+
+    #check:checked~.navbar {
+        height: 400px;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transition: 0.3s ease;
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    #check:checked~.navbar a {
+        transform: translateY(0px);
+        opacity: 1;
+        transition-delay: calc(.15s *var(--i));
+    }
+}
