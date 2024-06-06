@@ -1,0 +1,164 @@
+:root {
+    --purple-color: #6b2f88;
+    --pink-color: #c83e8e;
+    --white-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slider.active {
+    opacity: 1;
+}
+
+.slider img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.slider video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: hue-rotate(79deg) brightness(0.7) contrast(.6);
+}
+.content {
+    position: absolute;
+    bottom: 28vh;
+    left: 0;
+    padding: 20px;
+    color: #fff;
+    width: 600px;
+}
+
+.content h2,
+.content h1,
+.content p {
+    color: #fff;
+
+    /* font-size: 36px; */
+}
+
+.content p {
+    line-height: 30px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 13px;
+}
+
+.content button:hover {
+    cursor: pointer;
+
+    background-color: var(--pink-color);
+}
+
+.content button {
+    line-height: 14px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 15px 44px;
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    box-shadow: 0px 2px 3px #00000091;
+    border: none;
+    z-index: 5;
+    position: relative;
+}
+
+
+
+.arrow {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    z-index: 8;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.arrow_contenedor {
+    position: absolute;
+    bottom: 16%;
+    left: 10px;
+    width: 130px;
+}
+
+.counter {
+    color: rgb(255 255 255);
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.slider h1 {
+    font-size: 61px;
+    line-height: 66px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1325px;
+    width: 100% !important;
+    margin: 0 auto;
+    position: relative;
+}
+
+.max-width {
+    max-width: 1325px;
+    width: 100% !important;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+
+    }
+
+    .slider h1 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1000fr;
+        gap: 10px;
+
+    }
+}
