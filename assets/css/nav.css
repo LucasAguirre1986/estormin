@@ -1,5 +1,36 @@
+.pre-header {
+    background-color: var(--purple-color);
+    color: var(--white-color);
+
+}
+
+.pre-header__body {
+    padding: 3px 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.pre-header__body .active{
+    opacity: 0.6;
+}
+.pre-header__icons {
+    font-size: 13px;
+    position: relative;
+    font-weight: 300;
+    top: -3px;
+    margin-right: 10px;
+}
+
+.pre-header__icons .bx {
+    margin-right: 5px;
+    font-size: 22px;
+    position: relative;
+    top: 4px;
+}
+
 .header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -8,7 +39,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    height: 58px;
+    height: 66px;
 }
 
 .header::before {
@@ -18,7 +49,7 @@
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: #fff;
     backdrop-filter: blur(50px);
     z-index: -1;
 }
@@ -29,17 +60,25 @@
     text-decoration: none;
     font-weight: 700;
 }
-.logo img{
+
+.logo img {
     width: 87px;
     margin-bottom: -13px;
 }
 
 .navbar a {
-    font-size: 1.15rem;
-    color: var(--white-color);
+    font-size: 17px;
+    color: var(--purple-color);
     text-decoration: none;
     font-weight: 500;
+    text-align: right;
     margin-left: 2.5rem;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    cursor: pointer;
+    color: var(--pink-color);
 }
 
 #check {
@@ -50,9 +89,13 @@
     position: absolute;
     right: 5%;
     font-size: 2.8rem;
-    color: var(--white-color);
+    color: var(--purple-color);
     cursor: pointer;
     display: none;
+}
+
+.flag-icon {
+    width: 100px;
 }
 
 @media (max-width: 992px) {
@@ -84,7 +127,7 @@
         left: 0;
         width: 100%;
         height: 0;
-        background-color: rgba(0, 0, 0, .1);
+        background-color: #fff;
         backdrop-filter: blur(50px);
         transition: 0.3s ease;
         overflow: hidden;
