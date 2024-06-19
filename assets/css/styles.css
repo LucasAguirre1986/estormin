@@ -786,8 +786,7 @@ form {
 /* Smartphones en modo vertical y horizontal */
 @media (max-width: 600px) {
     .logo img {
-        width: 87px;
-        margin-bottom: -5px;
+        margin-bottom: -5px !important;
     }
     .max-width {
         width: 98% !important;
