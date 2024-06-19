@@ -303,9 +303,11 @@
     font-weight: 700;
     color: var(--blue-color);
 }
-.pt-5{
+
+.pt-5 {
     padding-top: 5rem;
 }
+
 h5 {
     font-size: 20px;
     font-weight: 700;
@@ -827,21 +829,57 @@ form {
         text-align: center;
     }
 
+    .slider-container {
+        height: calc(134vh - 58px);
+    }
+
     .slider-item {
-        display: grid;
+        display: flex;
+        flex-direction: column-reverse;
         grid-template-columns: 1fr;
         column-gap: 16px;
     }
 
     .header-slider h1 {
-        font-size: 22px;
-        line-height: 34px;
+        font-size: 16px;
+        line-height: 25px;
+        padding: 0;
+        background-color: var(--white-color);
+        margin-top: -89px !important;
+        display: block;
+        z-index: 9;
+        position: relative;
+        padding-top: 61px;
+        clip-path: polygon(0% 0%, 0% 100%, 189% 100%);
     }
 
     .slider-item img {
         width: 100%;
-        opacity: 0.0996;
-        margin-top: -155%;
+        height: 280px;
+        border-radius: 0;
+    }
+
+    .resalt {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0;
+        line-height: 30px;
+        font-size: 20px;
+        margin-top: -5rem;
+    }
+
+    .video-section {
+        position: relative;
+        padding: 6rem 1rem;
+        /* background: linear-gradient(to bottom, #00000080 calc(50% + 36px), var(--white-color) calc(50% - 36px)); */
+        background: url("https://www.animedia.pe/wp-content/uploads/2017/06/banner-audiovisual-2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 152px;
+    }
+
+    .video-section img.play-icon {
+        top: calc(33% + 36px);
+
     }
 
     .section-map img {
@@ -855,28 +893,56 @@ form {
         padding: 43px 9px 66px;
         font-size: 12px;
     }
-    .light-section h1, .light-section p, .primary-title {
-       
+
+    .light-section h1,
+    .light-section p,
+    .primary-title {
+
         line-height: 40px;
         font-size: 30px;
         padding: 0 0 2rem 0;
     }
+
     .arrow_contenedor {
         position: absolute;
         bottom: 1%;
         left: 10px;
         width: 130px;
     }
+
     .slider-item article {
         display: grid;
         grid-template-columns: 1fr;
         column-gap: 7px;
     }
+
     .content p {
         margin-bottom: -5px;
     }
+
     .mt-2 {
         margin-top: 0rem !important;
+    }
+
+    .team-wrap {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .team-wrap h1 {
+        font-size: 22px;
+        line-height: 32px;
+        margin: 0;
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+
+    .team-wrap img {
+        width: 135px;
+        border-radius: 50%;
+        height: 135px;
+        object-fit: cover;
+        margin-bottom: 21px;
     }
 }
 
