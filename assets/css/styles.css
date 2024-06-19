@@ -303,7 +303,9 @@
     font-weight: 700;
     color: var(--blue-color);
 }
-
+.pt-5{
+    padding-top: 5rem;
+}
 h5 {
     font-size: 20px;
     font-weight: 700;
@@ -504,6 +506,7 @@ h5 {
 
 .video-box {
     width: 418px;
+    max-width: 100%;
 }
 
 .video-box img {
@@ -520,6 +523,7 @@ h5 {
     margin-bottom: 72px;
     /* height: 130px; */
     padding: 20px;
+    max-width: 100%;
 }
 
 .text-box h5 {
@@ -651,4 +655,333 @@ img.play-icon2:hover,
     bottom: 17px;
     color: var(--pink-color);
 
+}
+
+.section-map {
+    line-height: 23px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: var(--dark-color);
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    gap: 15px;
+}
+
+.section-map img {
+    border-radius: 50%;
+    height: 450px;
+    width: 450px;
+    padding: 11px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    filter: drop-shadow(1px 2px 1px #ddd);
+}
+
+.section-map b {
+    color: var(--purple-color);
+}
+
+.section-map i {
+    font-size: 22px;
+    color: var(--pink-color);
+}
+
+.t-1 {
+    color: var(--pink-color);
+    font-size: 24px;
+    line-height: 29px;
+}
+
+footer {
+    background-color: var(--blue-middle-color);
+    color: var(--white-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.mb-7 {
+    margin-bottom: 7rem;
+}
+
+/* FORMS */
+form {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.section-form {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-bottom: 8rem;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--purple-color);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: var(--pink-color);
+}
+
+
+
+/* RESPONSIVE */
+
+/* Media Queries */
+/* Smartphones en modo vertical y horizontal */
+@media (max-width: 600px) {
+    .max-width {
+        width: 98% !important;
+    }
+
+    .section-map {
+        grid-template-columns: 1fr;
+    }
+
+    .box-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .box-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem 1rem;
+        font-size: 13px;
+    }
+
+    .box-items {
+        grid-template-columns: auto;
+    }
+
+    .light-section img {
+        width: 56px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .light-section h5 {
+        font-size: 17px;
+        line-height: 17px;
+        margin-bottom: 15px;
+        transition: 0.5s ease;
+        text-align: center;
+    }
+
+    .light-section .description {
+        text-align: center;
+    }
+
+    .slider-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 16px;
+    }
+
+    .header-slider h1 {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    .slider-item img {
+        width: 100%;
+        opacity: 0.0996;
+        margin-top: -155%;
+    }
+
+    .section-map img {
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .serv-box-2 {
+        padding: 43px 9px 66px;
+        font-size: 12px;
+    }
+    .light-section h1, .light-section p, .primary-title {
+       
+        line-height: 40px;
+        font-size: 30px;
+        padding: 0 0 2rem 0;
+    }
+    .arrow_contenedor {
+        position: absolute;
+        bottom: 1%;
+        left: 10px;
+        width: 130px;
+    }
+    .slider-item article {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 7px;
+    }
+    .content p {
+        margin-bottom: -5px;
+    }
+    .mt-2 {
+        margin-top: 0rem !important;
+    }
+}
+
+/* Tablets en modo vertical y horizontal */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .max-width {
+        width: 98% !important;
+    }
+
+    .box-items {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+
+    .light-section img {
+        width: 56px;
+    }
+
+    .light-section h5 {
+        font-size: 19px;
+        line-height: 29px;
+        margin-bottom: 15px;
+    }
+
+    .box-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .serv-box-2 {
+        font-size: 14px;
+    }
+
+    .section-map {
+        grid-template-columns: 1fr;
+    }
+
+    /* .video-box img {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+    }
+    .video-box {
+        width: 300px;
+    }
+    .text-box {
+        width: 300px;
+        margin-top: -10%;
+    }
+    .team-wrap {
+        width: 240px;
+        padding: 0.5rem;
+    } */
+}
+
+/* Dispositivos pequeños (desktops/laptops) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* body {
+        background-color: blue;
+    } */
+}
+
+/* Dispositivos grandes (desktops/laptops) */
+@media (min-width: 1441px) {
+    body {
+        background-color: green;
+    }
+}
+
+
+.swiper-slide {
+    width: 100%;
+    /* Default width */
+}
+
+/* Ancho fijo para diferentes tamaños de ventana */
+@media (min-width: 320px) {
+    .swiper-slide {
+        width: 80px;
+    }
+}
+
+@media (min-width: 480px) {
+    .swiper-slide {
+        width: 150px;
+    }
+}
+
+@media (min-width: 640px) {
+    .swiper-slide {
+        width: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    .swiper-slide {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .swiper-slide {
+        width: 300px;
+    }
 }
