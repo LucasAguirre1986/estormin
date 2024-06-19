@@ -830,7 +830,7 @@ form {
     }
 
     .slider-container {
-        height: calc(134vh - 58px);
+        height: calc(105vh);
     }
 
     .slider-item {
