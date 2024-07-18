@@ -27,6 +27,12 @@
     font-size: 22px;
     position: relative;
     top: 4px;
+    color: #fff;
+    line-height: 19px;
+}
+.pre-header__icons .xt {
+    top: 5px;
+    margin-left: 6px;
 }
 
 .header {
@@ -62,8 +68,9 @@
 }
 
 .logo img {
-    width: 87px;
-    margin-bottom: -13px;
+    width: 135px;
+    margin-bottom: -8px;
+    padding: 10px;
 }
 
 .navbar a {

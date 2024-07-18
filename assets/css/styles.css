@@ -19,6 +19,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .mt-1 {
     margin-top: 1rem !important;
 }
@@ -65,10 +69,11 @@
 
 .content {
     color: var(--pink-color);
-    background-image: url(../img/home17-shape1.png);
+    background-image: url(../img/elemento-grafico.png);
+    /* background-image: url(../img/home17-shape1.png); */
     background-size: cover;
-    background-position: left -78px;
-    background-size: 165px;
+    background-position: -378px;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -216,6 +221,12 @@
     /* clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); */
     margin-bottom: 3rem;
     padding-bottom: 5rem;
+
+    background-image: url(../img/elemento-grafico.png);
+    background-size: cover;
+    background-position: calc(100% + 400px);
+    background-size: 665px;
+    background-repeat: no-repeat;
 }
 
 .dark-section h1,
@@ -363,14 +374,14 @@ h5 {
 .resalt {
     margin: 0;
     padding: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     line-height: 48px;
     font-size: 38px;
     text-align: center;
     font-weight: 800;
     padding: 0 0 1rem 0;
     color: var(--grey-light-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); */
 }
 
 /* LIGHT */
@@ -380,13 +391,19 @@ h5 {
     color: var(--dark-color);
     padding: 6rem 0;
     padding-bottom: 6rem;
+
 }
 
 .left-backg {
-    background-image: url(../img/home17-shape1.png);
+    /* background-image: url(../img/home17-shape1.png);
     background-size: cover;
     background-position: left -211px;
     background-size: 165px;
+    background-repeat: no-repeat; */
+    background-image: url(../img/elemento-grafico.png);
+    background-size: cover;
+    background-position: -378px;
+    background-size: 665px;
     background-repeat: no-repeat;
 }
 
@@ -462,12 +479,24 @@ h5 {
 
 /* VIDEO SECTION */
 .video-section {
-    position: relative;
+    /* position: relative;
     padding: 6rem 1rem;
-    /* background: linear-gradient(to bottom, #00000080 calc(50% + 36px), var(--white-color) calc(50% - 36px)); */
     background: url("https://www.animedia.pe/wp-content/uploads/2017/06/banner-audiovisual-2.jpg");
     background-repeat: no-repeat;
+    background-size: contain; */
+    position: relative;
+    padding: 6rem 1rem;
+    background: #4d0cfe;
+    background-repeat: no-repeat;
     background-size: contain;
+    background: linear-gradient(to right, #8414fe, #cc24fe);
+}
+
+.video-section_before {
+    padding: 29px;
+    background-color: #4d0cfe;
+    clip-path: polygon(100% 100%, 100% 00%, 00% 100%);
+    margin-bottom: 0;
 }
 
 .video-section img {
@@ -576,11 +605,12 @@ img.play-icon2:hover,
 
 .video-card-section {
     padding-bottom: 3rem;
-    background-image: url(../img/home17-shape2.png);
+
+    /* background-image: url(../img/home17-shape2.png);
     background-size: cover;
     background-position: right -235px;
     background-size: 225px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .description-section {
@@ -668,6 +698,19 @@ img.play-icon2:hover,
     display: grid;
     grid-template-columns: 1fr 480px;
     gap: 15px;
+
+}
+
+.mimag {
+    background-image: url(../img/elemento-grafico.png);
+    background-size: contain;
+    background-position: calc(100% + 26px);
+    background-size: 188px;
+    background-repeat: no-repeat;
+    height: 181px;
+    margin-bottom: 2rem;
+    margin-top: -8rem;
+    padding-right: 16px;
 }
 
 .section-map img {
@@ -788,6 +831,7 @@ form {
     .logo img {
         margin-bottom: -5px !important;
     }
+
     .max-width {
         width: 98% !important;
     }
@@ -833,7 +877,7 @@ form {
     }
 
     .slider-container {
-        height: 100vh;
+        height: auto;
     }
 
     .slider-item {
@@ -871,13 +915,16 @@ form {
         margin-top: -5rem;
     }
 
-    .video-section {
-        position: relative;
-        padding: 6rem 1rem;
-        /* background: linear-gradient(to bottom, #00000080 calc(50% + 36px), var(--white-color) calc(50% - 36px)); */
-        background: url("https://www.animedia.pe/wp-content/uploads/2017/06/banner-audiovisual-2.jpg");
+    .mimag {
+        background-image: url(../img/elemento-grafico.png);
+        background-size: contain;
+        background-position: calc(100% + 4px);
+        background-size: 122px;
         background-repeat: no-repeat;
-        background-size: 100% 152px;
+        height: 128px;
+        margin-bottom: 2rem;
+        margin-top: -6rem;
+        padding-right: 16px;
     }
 
     .video-section img.play-icon {
@@ -1053,4 +1100,9 @@ form {
     .swiper-slide {
         width: 300px;
     }
+}
+
+.mailto a {
+    color: var(--dark-color) !important;
+    text-decoration: none;
 }
