@@ -876,8 +876,11 @@ form {
         text-align: center;
     }
 
-    .slider-container {
-        height: auto;
+    /* .slider-container {
+        position: static;
+    } */
+    .header-slider {
+        padding: 8px;
     }
 
     .slider-item {
