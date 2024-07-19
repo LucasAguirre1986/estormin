@@ -189,6 +189,15 @@ html {
     margin: 0 auto;
 }
 
+#cliente::before {
+    content: "";
+    display: block;
+    height: 60px;
+    /* Misma altura que el navbar */
+    margin-top: -60px;
+    /* Misma altura negativa */
+}
+
 @media only screen and (max-width: 600px) {
     .contenedor {
         display: grid;
