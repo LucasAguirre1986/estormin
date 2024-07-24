@@ -1073,9 +1073,9 @@ form {
 
 /* Dispositivos grandes (desktops/laptops) */
 @media (min-width: 1441px) {
-    body {
+    /* body {
         background-color: green;
-    }
+    } */
 }
 
 
